@@ -32,7 +32,12 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	// 메인 데이터베이스
 	implementation group: 'org.postgresql', name: 'postgresql', version: '42.3.3'
+
+	// 테스트용 H2 DATABASE
+	runtimeOnly 'com.h2database:h2'
 
 	//querydsl 추가
 	implementation "com.querydsl:querydsl-jpa:${queryDslVersion}"
